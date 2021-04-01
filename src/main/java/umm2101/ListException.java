@@ -1,7 +1,6 @@
 package umm2101;
 
-public class ListException extends RuntimeException{
-
+public class ListException extends RuntimeException {
   /**
    * This UID was generated.
    * 

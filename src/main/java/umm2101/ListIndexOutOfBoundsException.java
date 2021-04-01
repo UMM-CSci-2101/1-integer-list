@@ -1,6 +1,6 @@
 package umm2101;
 
-public class ListIndexOutOfBoundsException extends IndexOutOfBoundsException{
+public class ListIndexOutOfBoundsException extends IndexOutOfBoundsException {
   /**
    * This UID was generated.
    * 
