@@ -8,9 +8,9 @@
   <artifactId>lab-integer-list</artifactId>
   <version>1.0</version>
 
-  <name>labExample</name>
+  <name>labIntegerList</name>
   <!-- FIXME change it to the project's website -->
-  <url>https://github.com/UMM-CSci-2101</url>
+  <url>https://github.com/UMM-CSci-2101/lab-integer-list</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
