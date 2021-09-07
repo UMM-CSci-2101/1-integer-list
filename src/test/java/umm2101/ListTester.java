@@ -35,7 +35,11 @@ public class ListTester {
     // The following line of code checks the expectation that a the list
     // will contain one item. This test should instead actually try to add something 
     // to the list before checking that the length is one.
+    // For example, try this: 
+    // list.append(5);
+    logger.info("The list looks like:" + list);
     assertEquals(1, list.length(), "Expected list length <1>, but was actually length <" + list.length() + ">");
+    
   }
   
 }

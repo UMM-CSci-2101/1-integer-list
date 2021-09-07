@@ -48,14 +48,14 @@ public class LambertyListTester {
     // Check the assertion that the list has nothing
     assertEquals(0, list.length());
     // add 20 as the first item in the list (add to an empty list)
-    list.insert(1, 20);
+    list.insert(20);
     // verify that the list has exactly one item
     assertEquals(1, list.length());
     // Check the assertion that the item is, indeed, 20
-    assertEquals(20, list.getItemAt(1));
+    assertEquals(20, list.getValue());
     
     // add to the end of a non-empty list
-    list.insert(2, 30);
+    list.append(30);
     System.out.println("After adding 30 to the end, the list is now:" + list);
 
   }
@@ -71,11 +71,11 @@ public class LambertyListTester {
   
   @Test
   public void testGet() {  
-    list.insert(1, 20);
+    list.insert(20);
     // verify that the list has exactly one item
     assertEquals(1, list.length());
     // Check the assertion that the item is, indeed, 20
-    assertEquals(20, list.getItemAt(1));
+    assertEquals(20, list.getValue());
   }
   
   // todo: 6b1: write a test to get something that is not the first item in the list
@@ -87,30 +87,35 @@ public class LambertyListTester {
   @Test
   public void testRemove() {
     // add one item
-    list.insert(1, 20);
+    list.insert(20);
     
     // size is one, remove the first item, size is now zero
     assertEquals(1, list.length());
-    list.remove(1);
+    list.remove();
     assertEquals(0, list.length());
 
     // add 50 things to the list
     for (int i = 1; i<=50; i++) {
-      list.insert(1, i);
+      list.insert(i);
     }
     System.out.println(list);
     assertEquals(50, list.length());
 
+    for (int i = 0; i < 10; i++) {
+      list.next();
+    }
+    System.out.println("" + list.currPos());
     // removing the 10th item should remove 41
-    assertEquals(41, list.getItemAt(10));
-    list.remove(10);
-    assertEquals(40, list.getItemAt(10));
+    assertEquals(41, list.getValue());
+    list.remove();
+    assertEquals(40, list.getValue());
     assertEquals(49, list.length());
     System.out.println(list);
     
     // add a 50th item in position 50
-    list.insert(50, 66);
-    assertEquals(66, list.getItemAt(50));
+    list.moveToPos(50);
+    list.insert(66);
+    assertEquals(66, list.getValue());
   }
 
   // todo: 6c1: write a test that triggers the exception
