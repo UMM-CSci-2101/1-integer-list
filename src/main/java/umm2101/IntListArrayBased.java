@@ -23,9 +23,10 @@ public class IntListArrayBased implements IntegerList {
   @Override
   public boolean insert(int item) throws ListIndexOutOfBoundsException {
     if (numItems >= MAX_LIST) {
-    // todo: part of step 5:
+    // TODO: KK - remove this step from the lab and think of something else
     // fix the code so that the message provides correct details about the problem
-    throw new ListIndexOutOfBoundsException("ListIndexOutOfBoundsException on insert");
+    // there is not room, so return false
+      return false;
 
     } else {
       for (int i=numItems; i>position; i--) { // Shift elements up
