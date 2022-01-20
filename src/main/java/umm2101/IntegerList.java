@@ -9,7 +9,7 @@ public interface IntegerList { // List class ADT
 
   // Insert "it" at the current location
   // The client must ensure that the list's capacity is not exceeded
-  public boolean insert(int it) throws ListIndexOutOfBoundsException;
+  public boolean insert(int it);
 
   // Append "it" at the end of the list
   // The client must ensure that the list's capacity is not exceeded
