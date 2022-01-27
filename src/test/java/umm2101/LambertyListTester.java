@@ -15,7 +15,7 @@ import org.junit.jupiter.api.Test;
  */
 public class LambertyListTester {
 
-  private static final Logger logger = Logger.getLogger(ListTester.class.getName());
+  private static final Logger logger = Logger.getLogger(LambertyListTester.class.getName());
   
   // This field is declared here so that I can give it a value in setUp and refer to it in tests.
   // Note that I am only checking for behavior that is promised in the interface IntegerList
