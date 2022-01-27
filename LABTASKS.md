@@ -1,5 +1,14 @@
 LABTASKS.md
 
-Probably, once you have gotten to the point of reading these lab tasks (instructions), you will have your remote repository set up on GitHub (since we are using GitHub Classroom and you followed the assignment invitation to get started on the lab). The outcomes for this lab are included in the [README](README.md)
+Probably, once you have gotten to the point of reading these lab tasks (instructions), you will have your remote repository set up on GitHub (since we are using GitHub Classroom and you followed the assignment invitation to get started on the lab). The instructions will assume that you have a repository on GitHub that includes the appropriate starting code and structure.
 
-The starter code in this repository includes two test files. Running the test file and having all the tests pass is a good indication that you have made your code work correctly. 
+The detailed learning outcomes for this lab are included in the [README](README.md), but the gist is that you will be using the interface defined in `IntegerList.java` to explore writing tests and writing code to make those tests pass in the context of a List data structure. In addition to learning a little bit about Java interfaces and JUnit testing, you will encounter, use, and test Java exceptions.
+
+Remember, Java interfaces specify *what* methods a class promises to provide (what public methods must exist in a class that implements that interface), but not *how* those methods will do the work that they promise to do. This allows you to hide details of your implementation. For this lab, we are using an integer list where the values are stored in an array. The `IntegerList` interface does not specify that items will be stored in an array. How the data will be stored or accessed is not a promise made by the interface. In the subsequent lab, when we use a linked list structure to store our list data, the testing you develop here will still work because it will only rely on promises made in the `IntegerList` interface.
+
+- [x] Create a repository with the starter code
+- [ ] In GitKraken, clone the GitHub repository (this is your local copy, indicated in GitKraken by the little computer icon)
+- [ ] In Visual Studio Code (VS Code), use the file menu to open the folder containing this cloned repository
+- [ ] Try running the test in ListTester.java in VS Code by pressing the "test" button. The test should fail because it is incorrect - it claims that a new list should have one item when, actually, it should have 0 items. Fix the bad test by making the list have an item (there is a line of code just waiting for you to "uncomment" it) and run again. Now, it should pass! Most of the time, you should be editing your code rather than editing the tests when you are working to make tests pass. In this case, I wanted to be sure each of you had the chance to see a failing test (to know what that looks like) and make it pass (to know what that looks like too).
+
+There are several "TODO" items for the lab. The starter code in this repository includes two test files. Running the test file and having all the tests pass is a good indication that you have made your code work correctly. 
