@@ -21,7 +21,7 @@ public class IntListArrayBased implements IntegerList {
   }
   
   @Override
-  public boolean insert(int item) throws ListIndexOutOfBoundsException {
+  public boolean insert(int item) {
     if (numItems >= MAX_LIST) {
     // TODO: KK - remove this step from the lab and think of something else
     // fix the code so that the message provides correct details about the problem
