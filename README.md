@@ -2,7 +2,7 @@
 
 ## Exploration of JUnit, Interfaces, and Exceptions using Integer List
 
-This code was created for use in CSci 2101. Data Structures. The main learning goals are:
+This code was created for use in CSci 2101. Data Structures. By the end of this lab, you should meet these learning outcomes:
 
 1. Understand the basic structure and function of unit tests in Java (JUnit 5)
    1. How can you write a test in JUnit?
