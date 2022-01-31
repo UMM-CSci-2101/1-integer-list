@@ -1,5 +1,11 @@
 LABTASKS.md
 
+This document contains the instructions for this lab. There will be some items that you need to do just to make things work and try things out. I will indicate those items with a checkbox like this:
+- [ ] What items will look like when you should *do* the item, but it's not exactly "graded"
+
+Other tasks are graded elements and will be indicated as a TODO in your code and in these instructions. I will also say the number of points (which should match the rubric on Canvas). Those items will look more like this:
+1. (500 points) What items will look like you should do the item for points - These items generally indicate what to do and where to do it. For example, you should locate the label for the first lab task // TODO #1 in this lab. Lines of code that begin with `// TODO` will show up in the "PROBLEMS" tab in the command area/terminal area of VS Code. When you are done with a `// TODO` you should change it to `// DONE` so that I can still find it easily for grading (only change TODO to DONE), but it will not show as a problem anymore.
+
 Probably, once you have gotten to the point of reading these lab tasks (instructions), you will have your remote repository set up on GitHub (since we are using GitHub Classroom and you followed the assignment invitation to get started on the lab). The instructions will assume that you have a repository on GitHub that includes the appropriate starting code and structure.
 
 The detailed learning outcomes for this lab are included in the [README](README.md), but the gist is that you will be using the interface defined in `IntegerList.java` to explore writing tests and writing code to make those tests pass in the context of a List data structure. In addition to learning a little bit about Java interfaces and JUnit testing, you will encounter, use, and test Java exceptions.
@@ -9,6 +15,14 @@ Remember, Java interfaces specify *what* methods a class promises to provide (wh
 - [x] Create a repository with the starter code
 - [ ] In GitKraken, clone the GitHub repository (this is your local copy, indicated in GitKraken by the little computer icon)
 - [ ] In Visual Studio Code (VS Code), use the file menu to open the folder containing this cloned repository
-- [ ] Try running the test in ListTester.java in VS Code by pressing the "test" button. The test should fail because it is incorrect - it claims that a new list should have one item when, actually, it should have 0 items. Fix the bad test by making the list have an item (there is a line of code just waiting for you to "uncomment" it) and run again. Now, it should pass! Most of the time, you should be editing your code rather than editing the tests when you are working to make tests pass. In this case, I wanted to be sure each of you had the chance to see a failing test (to know what that looks like) and make it pass (to know what that looks like too).
+- [ ] Try running the test in ListTester.java in VS Code by pressing the "test" button. The test should fail because it is incorrect - it claims that a new list should have one item when, actually, it should have 0 items. 
+- [ ] Fix the bad test by making the list have an item (there is a line of code just waiting for you to "uncomment" it) and run again. Now, it should pass! 
 
-There are several "TODO" items for the lab. The starter code in this repository includes two test files. Running the test file and having all the tests pass is a good indication that you have made your code work correctly. 
+Most of the time, you should be editing your code rather than editing the tests when you are working to make tests pass. In this case, I wanted to be sure each of you had the chance to see a failing test (to know what that looks like) and make it pass (to know what that looks like too).
+
+There are several "TODO" items for the lab. The starter code in this repository includes two test files. Running the test files once you've written all the requested tests and having all the tests pass is a good indication that you have made your code work correctly.
+
+Any logger.info statements show up in the debug console (another tab besides interactions or output in VS Code). You may add these logging statements in your tests so that you can see more information about your tests. This strategy can be helpful for debugging because it helps you verify what is going on. You can also use `System.out.println("message")`, but the logger does give you a little more information by default, such as when the test was run and which test method generated the logged information.
+
+
+

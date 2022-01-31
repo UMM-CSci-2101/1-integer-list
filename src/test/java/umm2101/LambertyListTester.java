@@ -57,10 +57,12 @@ public class LambertyListTester {
     // add to the end of a non-empty list
     list.append(30);
     System.out.println("After adding 30 to the end, the list is now:" + list);
+    list.moveToPos(1);
+    assertEquals(30, list.getValue());
 
   }
   
-  // todo: 6a1: add a test for insert that throws an exception because 
+  // todo: 6a1: add a test for insert that asserts insert will return false because 
   // the list is already full
   
   // todo: 6a2: add a test for insert that throws an exception because 
@@ -104,7 +106,7 @@ public class LambertyListTester {
     for (int i = 0; i < 10; i++) {
       list.next();
     }
-    System.out.println("" + list.currPos());
+    System.out.println("We are at position: " + list.currPos());
     // removing the 10th item should remove 41
     assertEquals(41, list.getValue());
     list.remove();
@@ -112,8 +114,8 @@ public class LambertyListTester {
     assertEquals(49, list.length());
     System.out.println(list);
     
-    // add a 50th item in position 50
-    list.moveToPos(50);
+    // add a 50th item (in position 49)
+    list.moveToPos(49);
     list.insert(66);
     assertEquals(66, list.getValue());
   }

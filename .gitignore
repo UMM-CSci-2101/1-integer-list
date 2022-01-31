@@ -1,3 +1,7 @@
+# Files that are generated at runtime 
+# (since those files will be generated locally, they needn't be on GitHub)
+target/*
+
 # Compiled class file
 *.class
 
