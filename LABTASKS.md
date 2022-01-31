@@ -24,5 +24,28 @@ There are several "TODO" items for the lab. The starter code in this repository 
 
 Any logger.info statements show up in the debug console (another tab besides interactions or output in VS Code). You may add these logging statements in your tests so that you can see more information about your tests. This strategy can be helpful for debugging because it helps you verify what is going on. You can also use `System.out.println("message")`, but the logger does give you a little more information by default, such as when the test was run and which test method generated the logged information.
 
+  1. (2 points) // TODO 1: Add a test for insert that asserts insert will return false (because the list is full)
+   
+  2. (2 points) // TODO 2: Add a test for insert that checks for insert to return true
 
+  3. (2 points) // TODO 3: Add a test for insert that checks something else
+  
+  4. (2 points) // TODO 4: Write a test to get the first item in the list
+
+  5. (2 points) // TODO 5: Write a test to get something that is not the first item in the list
+  
+  6. (4 points) // TODO 6: Write a test that verifies that a NoSuchItemException is called when calling getValue() from the end of the list
+
+  7. (2 points) // TODO 7: Write a test that removes the first item in the list and checks that its value is what you expect
+  // (The method for `remove()` is not working. Do "todo 8" next so that this test will pass.)
+  
+  8. (4 points) // TODO 8: Write the code for `remove()`
+
+  9. (2 points) // TODO 9: Write a test that removes an item in the list and checks that its value is what you expect (not first)
+  
+  10. (2 points) // TODO 10: Write a test for removing all the items (clear)
+
+  11. (3 points) // TODO 11: write a test that triggers the NoSuchElementException is thrown when calling remove() (Figure out when that exception should be thrown. Check that it is thrown (which is isn't, so that test will fail)). Do "todo 12" to write the code that throws the exception.
+  
+  12. (3 points) // TODO 12: Create an appropriate message for the exception thrown by `remove()` that provides correct details about the problem.
 

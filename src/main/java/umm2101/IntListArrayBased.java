@@ -23,9 +23,6 @@ public class IntListArrayBased implements IntegerList {
   @Override
   public boolean insert(int item) {
     if (numItems >= MAX_LIST) {
-    // TODO: KK - remove this step from the lab and think of something else
-    // fix the code so that the message provides correct details about the problem
-    // there is not room, so return false
       return false;
 
     } else {
@@ -51,13 +48,14 @@ public class IntListArrayBased implements IntegerList {
   
   @Override
   public int remove() 
-    throws ListIndexOutOfBoundsException {
-    // todo: part of step 4: this method doesn't work yet - you need to write this code
+    throws NoSuchElementException {
+    // This method doesn't work yet (even though it compiles). You need to write this code.
+    // TODO 8: Write the code for remove()
     // What needs to happen when you remove something from an array-based list?
     
-    // Someone might ask to remove an item from a location that does not exist
-    // todo: part of step 5: be sure that the message for this exception 
-    // provides correct details about the problem
+    // Someone might ask to remove an item when you are at the end of the list,
+    // and you can't remove anything from there. Look at the method getValue() below for an example.
+    // TODO 12: Create an appropriate message for this exception that provides correct details about the problem
     return 0;
   }
 
@@ -121,7 +119,8 @@ public class IntListArrayBased implements IntegerList {
     if (position < numItems) {
       return items[position];
     } else {
-      throw new NoSuchElementException("There isn't an element here");
+      // Use this as an example for what to do for the "todo" where you are asked to throw an exception
+      throw new NoSuchElementException("The current position is after the last item. There isn't an element here");
     }
   }
 

@@ -62,13 +62,11 @@ public class LambertyListTester {
 
   }
   
-  // todo: 6a1: add a test for insert that asserts insert will return false because 
-  // the list is already full
-  
-  // todo: 6a2: add a test for insert that throws an exception because 
-  // the location is not a possible location since the list only has some smaller number of items
+  // TODO 1: Add a test for insert that asserts insert will return false (because the list is full)
    
-  // todo: 6a3: add some other test for insert that checks something else
+  // TODO 2: Add a test for insert that checks for insert to return true
+
+  // TODO 3: Add a test for insert that checks something else
   
   
   @Test
@@ -80,10 +78,11 @@ public class LambertyListTester {
     assertEquals(20, list.getValue());
   }
   
-  // todo: 6b1: write a test to get something that is not the first item in the list
+  // TODO 4: Write a test to get the first item in the list
+
+  // TODO 5: Write a test to get something that is not the first item in the list
   
-  // todo: 6b2: write a test to trigger an exception because 
-  // you are asking for an item with a location that is too large of a number given the number of items
+  // TODO 6: Write a test that verifies that a NoSuchItemException is called when calling getValue() from the end of the list
 
   
   @Test
@@ -120,13 +119,15 @@ public class LambertyListTester {
     assertEquals(66, list.getValue());
   }
 
-  // todo: 6c1: write a test that triggers the exception
-  // because the location is too large of a number compared to the number of items in the list
- 
-  // todo: 6c2: write a test that removes something that is not the last item in the list
+  // TODO 7: Write a test that removes the first item in the list and checks that its value is what you expect
+  // (The method for remove() is not working. Do "todo 8" next so that this test will pass.)
   
-  // todo: 6c3: write some other test of remove
+  // TODO 9: Write a test that removes an item in the list and checks that its value is what you expect (not first)
   
-  // todo: 6d: write a test for removing all the items (clear)
+  // TODO 10: Write a test for removing all the items (clear)
+
+  // TODO 11: write a test that triggers the NoSuchElementException is thrown when calling remove()
+  // (Figure out when that exception should be thrown. Check that it is thrown (which is isn't, so that test will fail).)
+  // Do "todo 12" to write the code that throws the exception.
   
 }
