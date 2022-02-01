@@ -24,7 +24,13 @@ There are several "TODO" items for the lab. The starter code in this repository 
 
 Any logger.info statements show up in the debug console (another tab besides interactions or output in VS Code). You may add these logging statements in your tests so that you can see more information about your tests. This strategy can be helpful for debugging because it helps you verify what is going on. You can also use `System.out.println("message")`, but the logger does give you a little more information by default, such as when the test was run and which test method generated the logged information.
 
-Most of the work for this lab will happen in the IntListTester.java file. Wherever you find the `// TODO` in your code, that is where you should do the work for that item. When you are done with a `// TODO` you should change it to `// DONE` so that I can still find it easily for grading (i.e., only change TODO to DONE so that I can easily search through your code for `// DONE` and find your work for grading), but it will not show as a "problem" anymore.
+- [ ] Most of the work for this lab will happen in the IntListTester.java file. 
+- [ ] Wherever you find the `// TODO` in your code, that is where you should do the work for that task. When you are done with a `// TODO` you should change it to `// DONE` so that I can still find it easily for grading (i.e., only change TODO to DONE so that I can easily search through your code for `// DONE` and find your work for grading), but it will not show as a "problem" anymore. 
+- [ ] Commit your changes after each task describing what was done. 
+- [ ] When you are done (or at the end of each session), push your changes to GitHub.
+- [ ] When you are done with the lab, submit a text entry on Canvas indicating when you have completed the lab.
+
+------
 
   1. (2 points) In `IntListTester.java`: // TODO 1: Add a test for insert that asserts insert will return false (because the list is full)
    
@@ -36,7 +42,7 @@ Most of the work for this lab will happen in the IntListTester.java file. Wherev
 
   5. (2 points) In `IntListTester.java`: // TODO 5: Write a test to get something that is not the first item in the list
   
-  6. (4 points) In `IntListTester.java`: // TODO 6: Write a test that verifies that a NoSuchItemException is called when calling getValue() from the end of the list
+  6. (4 points) In `IntListTester.java`: // TODO 6: Write a test that verifies that a NoSuchItemException with the expected message is called when calling getValue() from the end of the list (hint: you may want to check for the exception in a separate assertion from checking for the message)
 
   7. (2 points) In `IntListTester.java`: // TODO 7: Write a test that removes the first item in the list and checks that its value is what you expect
   // (The method for `remove()` is not working. Do "todo 8" next so that this test will pass.)
@@ -49,5 +55,5 @@ Most of the work for this lab will happen in the IntListTester.java file. Wherev
 
   11. (3 points) In `IntListTester.java`: // TODO 11: write a test that triggers the NoSuchElementException is thrown when calling remove() (Figure out when that exception should be thrown. Check that it is thrown (which is isn't, so that test will fail)). Do "todo 12" to write the code that throws the exception.
   
-  12. (3 points) In `IntListArrayBased.java`: // TODO 12: Create an appropriate message for the exception thrown by `remove()` that provides correct details about the problem.
+  12. (3 points) In `IntListArrayBased.java`: // TODO 12: Create an appropriate message for the exception thrown by `remove()` that provides correct details about the problem. There is an example in `getValue()` of how to throw an exception with an appropriately helpful message.
 
