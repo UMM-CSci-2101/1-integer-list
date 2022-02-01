@@ -6,6 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import java.util.logging.Logger;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -33,6 +34,7 @@ public class IntListTester {
   }
 
   @Test
+  @DisplayName("New lists are empty")
   public void testEmptyOnCreate() {
     System.out.println("-----Begin testEmptyOnCreate()-----");
     logger.info("The list has no items: " + list.toString());
@@ -41,6 +43,7 @@ public class IntListTester {
   }
   
   @Test
+  @DisplayName("Insert at current position")
   public void testInsertMethod() {
     System.out.println("-----Begin testInsertMethod()-----");
     // Using the logger
@@ -71,6 +74,7 @@ public class IntListTester {
   
   
   @Test
+  @DisplayName("Get the value at the current position")
   public void testGet() {  
     System.out.println("-----Begin testGet()-----");
     list.insert(20);
@@ -90,6 +94,7 @@ public class IntListTester {
   
   @Test
   // @Disabled
+  @DisplayName("Remove from current position")
   public void testRemove() {
     System.out.println("-----Begin testRemove()-----");
 

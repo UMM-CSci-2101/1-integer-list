@@ -22,9 +22,9 @@ public class LittleListTester {
    * versions of JUnit testing required this format. Now, we use annotations like @Test
    * to indicate where there is a test and we can also specify lots of other things about
    * the tests using a wide variety of annotations (such as @DisplayName) to help us control
-   * and understand the tests.
+   * and understand the tests. The DisplayName will show in the testing view in VS Code.
    */
-  @DisplayName("Test adding something to a list")
+  @DisplayName("Append to the end of a list")
   @Test
   public void testAppendMethod() {
     IntegerList list = new IntListArrayBased();
