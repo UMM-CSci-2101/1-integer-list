@@ -56,7 +56,7 @@ public class IntListArrayBased implements IntegerList {
     // Someone might ask to remove an item when you are at the end of the list,
     // and you can't remove anything from there. Look at the method getValue() below for an example.
     // TODO 12: Create an appropriate message for this exception that provides correct details about the problem
-    return 0;
+    return -100;
   }
 
   @Override
@@ -130,12 +130,17 @@ public class IntListArrayBased implements IntegerList {
   }
   
   public String toString(){
-    String s = "[";
+    StringBuilder s = new StringBuilder("[");
+    int position = currPos();
     for (int i = 0; i<numItems; i++){
-      s = s + items[i] + " ";
+      if (i==position) {
+        s.append(" (" + items[i] + ")");
+      } else {
+        s.append(" " + items[i]);
+      }
     }
-    s += "]";
-    return s;
+    s.append("]");
+    return s.toString();
   }
   
 }

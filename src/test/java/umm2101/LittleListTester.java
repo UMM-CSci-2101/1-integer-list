@@ -12,9 +12,9 @@ import org.junit.jupiter.api.Test;
  * will be called when running the test with JUnit (unless there is some other indication
  * that the test should not be run, such as using the annotation @Disabled).
  */
-public class ListTester {
+public class LittleListTester {
 
-  private static final Logger logger = Logger.getLogger(ListTester.class.getName());
+  private static final Logger logger = Logger.getLogger(LittleListTester.class.getName());
  
   /**
    * A test method often follows the naming pattern test___() where 
