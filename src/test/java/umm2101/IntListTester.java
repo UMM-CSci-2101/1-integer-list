@@ -1,8 +1,10 @@
 package umm2101;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import java.util.NoSuchElementException;
 import java.util.logging.Logger;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -91,6 +93,23 @@ public class IntListTester {
   
   // TODO 6: Write a test that verifies that a NoSuchItemException is called when calling getValue() from the end of the list
 
+  @Test
+  @DisplayName("Test nosuchelement excaption")
+  public void testExceptionNoSuchElementGetValue() {
+    list.append(3);
+    list.append(5);
+    list.append(7);
+    logger.info("The list looks like this: " + list);
+    list.moveToEnd();
+    logger.info("The list looks like this: " + list);
+    NoSuchElementException exception = assertThrows(NoSuchElementException.class, () -> {
+      list.getValue();
+    });
+    assertEquals("The current position is after the last item. There isn't an element here", exception.getMessage());
+
+    list.moveToStart();
+    assertEquals(3, list.getValue());
+  }
   
   @Test
   // @Disabled
